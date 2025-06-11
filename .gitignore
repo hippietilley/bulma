@@ -19,3 +19,5 @@ _site
 dev
 node_modules
 test/output/
+
+.vscode/
