@@ -12,7 +12,7 @@ $box-link-hover-shadow: 0 0.5em 1em -0.125em rgba(derived-variables.$scheme-inve
 $box-link-active-shadow: inset 0 1px 2px rgba(derived-variables.$scheme-invert, 0.2), 0 0 0 1px derived-variables.$link !default
 
 .box
-  @extend %block
+  @extend %block !optional
   background-color: $box-background-color
   border-radius: $box-radius
   box-shadow: $box-shadow
