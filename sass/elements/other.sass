@@ -3,10 +3,10 @@
 @use "../utilities/initial-variables"
 
 .block
-  @extend %block
+  @extend %block !optional
 
 .delete
-  @extend %delete
+  @extend %delete !optional
 
 .heading
   display: block
@@ -16,7 +16,7 @@
   text-transform: uppercase
 
 .loader
-  @extend %loader
+  @extend %loader !optional
 
 .number
   align-items: center

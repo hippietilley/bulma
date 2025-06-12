@@ -21,7 +21,7 @@ $file-name-max-width: 16em !default
 $file-colors: shared.$form-colors !default
 
 .file
-  @extend %unselectable
+  @extend %unselectable !optional
   align-items: stretch
   display: flex
   justify-content: flex-start
@@ -158,7 +158,7 @@ $file-colors: shared.$form-colors !default
 
 .file-cta,
 .file-name
-  @extend %control
+  @extend %control !optional
   border-color: $file-border-color
   border-radius: $file-radius
   font-size: 1em

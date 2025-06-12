@@ -157,7 +157,7 @@ body
   overflow-y: hidden
 
 .navbar-burger
-  @extend %reset
+  @extend %reset !optional
   color: $navbar-burger-color
   +mixins.hamburger($navbar-height)
   +mixins.ltr-property("margin", auto, false)
@@ -220,7 +220,7 @@ a.navbar-item,
 .navbar-link:not(.is-arrowless)
   +mixins.ltr-property("padding", 2.5em)
   &::after
-    @extend %arrow
+    @extend %arrow !optional
     border-color: $navbar-dropdown-arrow
     margin-top: -0.375em
     +mixins.ltr-position(1.125em)

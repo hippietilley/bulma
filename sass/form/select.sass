@@ -17,7 +17,7 @@ $select-colors: shared.$form-colors !default
     height: shared.$input-height
   &:not(.is-multiple):not(.is-loading)
     &::after
-      @extend %arrow
+      @extend %arrow !optional
       border-color: shared.$input-arrow
       +mixins.ltr-position(1.125em)
       z-index: 4
@@ -26,7 +26,7 @@ $select-colors: shared.$form-colors !default
       border-radius: initial-variables.$radius-rounded
       +mixins.ltr-property("padding", 1em, false)
   select
-    @extend %input
+    @extend %input !optional
     cursor: pointer
     display: block
     font-size: 1em
@@ -82,7 +82,7 @@ $select-colors: shared.$form-colors !default
       width: 100%
   &.is-loading
     &::after
-      @extend %loader
+      @extend %loader !optional
       margin-top: 0
       position: absolute
       +mixins.ltr-position(0.625em)

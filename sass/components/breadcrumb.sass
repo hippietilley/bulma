@@ -11,8 +11,8 @@ $breadcrumb-item-padding-horizontal: 0.75em !default
 $breadcrumb-item-separator-color: derived-variables.$border-hover !default
 
 .breadcrumb
-  @extend %block
-  @extend %unselectable
+  @extend %block !optional
+  @extend %unselectable !optional
   font-size: derived-variables.$size-normal
   white-space: nowrap
   a

@@ -27,7 +27,7 @@ $message-header-body-border-width: 0 !default
 $message-colors: derived-variables.$colors !default
 
 .message
-  @extend %block
+  @extend %block !optional
   background-color: $message-background-color
   border-radius: $message-radius
   font-size: derived-variables.$size-normal
@@ -60,7 +60,7 @@ $message-colors: derived-variables.$colors !default
         $desaturate-percentage: $color-luminance * 30%
         $color-dark: color.adjust(color.adjust($color, $lightness: -$darken-percentage), $saturation: -$desaturate-percentage)
     @else
-      $color-lightning: max((100% - color.lightness($color)) - 2%, 0%)
+      $color-lightning: max((100% - color.channel($color, "lightness", $space: hsl)) - 2%, 0%)
       $color-light: color.adjust($color, $lightness: $color-lightning)
 
     &.is-#{$name}

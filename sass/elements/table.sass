@@ -31,7 +31,7 @@ $table-striped-row-even-hover-background-color: derived-variables.$scheme-main-t
 $table-colors: derived-variables.$colors !default
 
 .table
-  @extend %block
+  @extend %block !optional
   background-color: $table-background-color
   color: $table-color
   td,
@@ -129,7 +129,7 @@ $table-colors: derived-variables.$colors !default
           background-color: $table-striped-row-even-background-color
 
 .table-container
-  @extend %block
+  @extend %block !optional
   +mixins.overflow-touch
   overflow: auto
   overflow-y: hidden

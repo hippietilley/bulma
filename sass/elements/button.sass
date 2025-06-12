@@ -63,8 +63,8 @@ $button-responsive-sizes: ("mobile": ("small": (derived-variables.$size-small * 
   font-size: derived-variables.$size-large
 
 .button
-  @extend %control
-  @extend %unselectable
+  @extend %control !optional
+  @extend %unselectable !optional
   background-color: $button-background-color
   border-color: $button-border-color
   border-width: $button-border-width
@@ -274,7 +274,7 @@ $button-responsive-sizes: ("mobile": ("small": (derived-variables.$size-small * 
     color: transparent !important
     pointer-events: none
     &::after
-      @extend %loader
+      @extend %loader !optional
       +mixins.center(1em)
       position: absolute !important
   &.is-static

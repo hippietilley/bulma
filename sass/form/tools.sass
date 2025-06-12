@@ -208,7 +208,7 @@ $label-colors: shared.$form-colors !default
       right: 0
   &.is-loading
     &::after
-      @extend %loader
+      @extend %loader !optional
       position: absolute !important
       +mixins.ltr-position(0.625em)
       top: 0.625em

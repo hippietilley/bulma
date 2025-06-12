@@ -31,9 +31,9 @@ $tabs-toggle-link-active-border-color: derived-variables.$link !default
 $tabs-toggle-link-active-color: derived-variables.$link-invert !default
 
 .tabs
-  @extend %block
+  @extend %block !optional
   +mixins.overflow-touch
-  @extend %unselectable
+  @extend %unselectable !optional
   align-items: stretch
   display: flex
   font-size: derived-variables.$size-normal
